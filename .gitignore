@@ -85,24 +85,24 @@ ghost/coverage.html
 ########################
 # sails
 ########################
-test-sails/.sails
-test-sails/.waterline
-test-sails/.rigging
-test-sails/.tmp
+test-sail/.sails
+test-sail/.waterline
+test-sail/.rigging
+test-sail/.tmp
 
 
 ########################
 # node.js / npm
 ########################
-test-sails/lib-cov
-test-sails/*.seed
-test-sails/*.log
-test-sails/*.csv
-test-sails/*.dat
-test-sails/*.out
-test-sails/*.pid
-test-sails/*.gz
+test-sail/lib-cov
+test-sail/*.seed
+test-sail/*.log
+test-sail/*.csv
+test-sail/*.dat
+test-sail/*.out
+test-sail/*.pid
+test-sail/*.gz
 
-test-sails/pids
-test-sails/logs
-test-sails/results
+test-sail/pids
+test-sail/logs
+test-sail/results
