@@ -1,0 +1,188 @@
+/* Editor /ghost/editor/
+/* ---------------------------------------------------------- */
+
+
+/* Title
+/* ---------------------------------------------------------- */
+
+.gh-editor-title {
+    flex-grow: 1;
+    margin-bottom: 2vw;
+}
+
+.gh-editor-title input {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: var(--darkgrey);
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.gh-editor-title input:focus {
+    outline: 0;
+}
+
+.editor-options .dropdown-menu {
+    top: 35px;
+    right: 0;
+    left: auto;
+}
+
+
+/* Tags input CSS (TODO: needs some revision)
+/* ------------------------------------------------------ */
+.tags-input-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tags-input-list li {
+    flex: 1 0 auto;
+}
+
+.label-tag {
+    margin-right: 0.3em;
+    padding: 0.2em 0.6em 0.3em;
+    background-color: var(--darkgrey);
+    border-radius: 0.25em;
+    color: var(--lightgrey);
+    text-align: center;
+    font-weight: 300;
+}
+
+.label-tag.highlight {
+    background: var(--midgrey);
+    color: #fff;
+}
+
+.tag-input {
+    margin-top: 5px;
+    border: none;
+    font-weight: 300;
+    cursor: default;
+}
+
+.tag-input:focus {
+    outline: 0;
+}
+
+.publish-bar-actions {
+    flex: 1 0 auto;
+    align-self: auto;
+    display: flex;
+    text-align: right;
+}
+
+.post-settings {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    color: var(--midgrey);
+    transition: all 0.15s ease-out 0s;
+}
+
+.post-settings:hover,
+.post-settings.active {
+    color: var(--darkgrey);
+}
+
+.post-settings i {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.post-settings-menu .dropdown-menu {
+    top: auto;
+    right: 100%;
+    bottom: 100%;
+    left: auto;
+}
+
+.post-view-link {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    font-size: 1.3rem;
+}
+
+.post-view-link i {
+    display: inline;
+    font-size: 10px;
+}
+
+
+/* Post settings meta
+/* ---------------------------------------------------------- */
+
+/* Google Imitation */
+.seo-preview {
+    font-family: Arial, sans-serif;
+}
+
+.seo-preview-title {
+    color: #1e0fbe;
+    text-overflow: ellipses;
+    word-wrap: break-word;
+    font-size: 1.8rem;
+    line-height: 2.16rem;
+
+    -webkit-text-overflow: ellipsis;
+}
+
+.seo-preview-link {
+    margin: 1px 0 2px 0;
+    color: #006621;
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+.seo-preview-description {
+    color: #545454;
+    word-wrap: break-word;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+
+
+/* NEW editor
+/* ---------------------------------------------------------- */
+
+.gh-editor-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 65px;
+}
+
+.gh-editor-status {
+    color: var(--midgrey);
+    font-weight: 300;
+}
+
+.gh-editor-container {
+    position: relative;
+    overflow-y: auto;
+    padding: 10vw 4vw;
+    width: 100%;
+}
+
+.gh-editor-inner {
+    margin: 0 auto;
+    max-width: 700px;
+}

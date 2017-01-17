@@ -1,0 +1,26 @@
+{{#light-table table scrollBuffer=100 as |t|}}
+    {{t.head
+        onColumnClick=(action sortByColumn)
+        iconAscending="icon-ascending"
+        iconDescending="icon-descending"}}
+
+    {{#t.body
+        canSelect=false
+        tableActions=(hash delete=delete)
+        scrollBuffer=100
+        onScrolledToBottom=(action 'onScrolledToBottom')
+        as |body|
+    }}
+        {{#if isLoading}}
+            {{#body.loader}}
+                <span class="gh-subscribers-loading">Loading...</span>
+            {{/body.loader}}
+        {{else}}
+            {{#if table.isEmpty}}
+                {{#body.no-data}}
+                    No subscribers found.
+                {{/body.no-data}}
+            {{/if}}
+        {{/if}}
+    {{/t.body}}
+{{/light-table}}
